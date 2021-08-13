@@ -18,7 +18,7 @@ Obviously there are some crazy optimizations around the Web, but I've tried not 
 The unit test task was not completed due to lack of knowledge on how to do it on C (I was just beginning to learn it on Python, which is my current main language).
 
 ### Q5 ###
-* Download *Q4_query.sql* (the actual answer to the exercise) ans (optionally) *Q4_sampledata.sql* (Sample data to test the query).
+* Download *Q5_query.sql* (the actual answer to the exercise) ans (optionally) *Q5_sampledata.sql* (Sample data to test the query).
 * Load the table from the sample data, or create one yourself following the guidelines for its structure.
 * Execute the query from the file.
 **NOTES:**
@@ -26,7 +26,21 @@ The unit test task was not completed due to lack of knowledge on how to do it on
     -- *If there are more than one student with the same grade (...) sort (...) by their names in alphabetical order"* - but the output example shows Marcela and Julia with the same grade and their names are ordered in reverse (Marcela first, then Julia).
     -- *... if the grade is less than 8, (...) list them in grades in descending order* - Inconclusive, both students with grades below 8 have the same grade. Anyway, this was implemented.
     -- *If there are more than one student with the same grade (1-7), sort those students in particular by their grades in ascending order.* - That doesn't seem to make any sense, if they have the same grade, there's nothing to sort. We assumed that the question meant ordering by **Values** in ascending order, because that's what seems to have happened in the sample.
-    -- We tried to implement the rule ONLY for the NULL students, but it seems that SQLite
+    -- We tried to implement the rule ONLY for the NULL students, but we were unable to do so using *ORDER BY CASE*. For this specific case it works the same, but that could be improved.
+    -- There's a repeated SELECT statement in my solution that could possibly be avoided, but I was unable to do that.
+
+### Q7 ###
+* Download *Q7_query.sql* (the actual answer to the exercise) ans (optionally) *Q7_sampledata.sql* (Sample data to test the query).
+* Load the table from the sample data, or create one yourself following the guidelines for its structure.
+* Execute the query from the file.
+
+### Q8 ###
+* Download/open the file *Q8.c*. Inside you'll find the sequence of commands for each one of the tasks.
+* We also considered that each of the tasks would be independent from each other; if they're planned to run in batch, it might be better to remove some of the **x** and **bq** (instructions about which ones would have to be removed are at the end of the file).
+
+### Q9 ###
+* Compile and run the file *Q9.c*.
+* Instructions will be presented on screen.
 
 
 
