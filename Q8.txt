@@ -1,0 +1,25 @@
+Question 8 answers:
+
+Problem #1:
+1) bq
+2) rel ABC
+3) di
+4) x
+
+Problem #2:
+1) bq
+2) rel XYZ
+3) re f
+4) re l
+5) x
+
+Problem #3:
+1) bq
+2) rel XYZ
+3) re 10
+4) re n
+5) re n
+6) x
+
+NOTE: If we're doing all the operations in sequence, we could remove step 4 from Problem #1,
+      steps 1 and 5 from Problem #2, and step 1 from Problem #3
